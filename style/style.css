@@ -71,3 +71,6 @@ main {
     margin-top: 5%; }
     main button:last-child {
       margin-right: 0; }
+
+.recordTitle {
+  margin-bottom: 0; }

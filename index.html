@@ -7,12 +7,7 @@
 </head>
 <body>
   <main id="mainArea">
-    <nav>
-      <ul>
-        <a href=""><li>Registration</li></a>
-        <a href="#records"><li>Records</li></a>
-      </ul>
-    </nav>
+
   </main>
 
   <script type='text/template' id="homePage">
@@ -35,12 +30,24 @@
   </script>
 
   <script type="text/template" id="record">
-    <h1>Records</h2>
-
-    <h3>First Name</h3><span> <%= firstName %>  </span>
-    <h3>Last Name</h3><span> <%= lastName %>  </span>
-    <h3>Address</h3><span> <%= address %>  </span>
-    <h3>Phone Number</h3><span> <%= phoneNumber %> </span>
+    <nav>
+      <ul>
+        <a href=""><li>Registration</li></a>
+        <a href="#records"><li>Records</li></a>
+      </ul>
+    </nav>
+    <h1>Records:</h1>
+    <% _.forEach(records, function(data){ %>
+    <h2 class="recordTitle">Record:</h2>
+    <h3>First Name:</h3><br>
+    <span><%=data.firstName %></span><br>
+    <h3>Last Name:</h3><br>
+    <span><%= data.lastName %></span><br>
+    <h3>Address:</h3><br>
+    <span><%= data.address %></span><br>
+    <h3>Phone Number:</h3><br>
+    <span><%= data.phoneNumber %></span>
+    <% }) %>
 
   </script>
 
