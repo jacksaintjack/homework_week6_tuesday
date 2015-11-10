@@ -1,0 +1,20 @@
+{
+  "name": "tuesday",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jacksaintjack/homework_week6_tuesday",
+  "authors": [
+    "Nicholas Glover <jacksaintjack@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "~4.2.6",
+    "neat": "~1.7.2"
+  }
+}
