@@ -5,3 +5,69 @@ html {
 *::after,
 *::before {
   box-sizing: inherit; }
+
+main {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto; }
+  main::after {
+    clear: both;
+    content: "";
+    display: table; }
+  main nav {
+    background: #AADBF5;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin: 0; }
+    main nav:last-child {
+      margin-right: 0; }
+    main nav li {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      list-style: none;
+      display: inline-block;
+      text-align: center;
+      position: relative;
+      right: 1em;
+      bottom: 0.4em;
+      color: white; }
+      main nav li:last-child {
+        margin-right: 0; }
+  main h1 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    text-align: center; }
+    main h1:last-child {
+      margin-right: 0; }
+  main h3 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-bottom: 0; }
+    main h3:last-child {
+      margin-right: 0; }
+  main input {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    height: 2em; }
+    main input:last-child {
+      margin-right: 0; }
+  main button {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-left: 29.85432%;
+    font-size: 1.2em;
+    margin-top: 5%; }
+    main button:last-child {
+      margin-right: 0; }

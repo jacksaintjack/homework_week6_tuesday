@@ -3,18 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link rel="stylesheet" href="style/style.css" media="screen">
 </head>
 <body>
   <main id="mainArea">
-
+    <nav>
+      <ul>
+        <a href=""><li>Registration</li></a>
+        <a href="#records"><li>Records</li></a>
+      </ul>
+    </nav>
   </main>
 
   <script type='text/template' id="homePage">
+    <nav>
+      <ul>
+        <a href=""><li>Registration</li></a>
+        <a href="#records"><li>Records</li></a>
+      </ul>
+    </nav>
     <h1>Registration Area</h1>
-    <input type="text" placeholder="First Name">
-    <input type="text" placeholder="Last Name">
-    <input type="text" placeholder="Address">
-    <input type='text' placeholder="Phone Number">
+    <h3>First Name </h3>
+    <input id="firstName" type="text" placeholder="First Name"><br>
+    <h3>Last Name </h3>
+    <input id="lastName" type="text" placeholder="Last Name"><br>
+    <h3>Address</h3>
+    <input id="address" type="text" placeholder="Address"><br>
+    <h3>Phone Number</h3>
+    <input id="phoneNumber" type='text' placeholder="Phone Number"><br>
+    <button id="submit">Submit</button>
+  </script>
+
+  <script type="text/template" id="record">
+    <h1>Records</h2>
+
+    <h3>First Name</h3><span> <%= firstName %>  </span>
+    <h3>Last Name</h3><span> <%= lastName %>  </span>
+    <h3>Address</h3><span> <%= address %>  </span>
+    <h3>Phone Number</h3><span> <%= phoneNumber %> </span>
+
   </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
